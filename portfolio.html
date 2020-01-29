@@ -1,73 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Good Stuff</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Good Test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Comfortaa">
+<style>
+body {
+  font-family: 'Comfortaa', cursive;
+font-size: 18px;
+}
+
+.background {
+  background-image: url("./assets/images/concrete-texture.png");
+}
+@media only screen and (max-width: 582px) {
+  .brand-logo {
+  font-size: 20px;
+}
+  
+}
+</style>
 </head>
-    <body>
-        <header>
-            <nav class="name-nav">
-                <h1>
-                    Adena L. McGibbon
-                </h1>
-                <div class="nav-list">
-                        <ul>
-                            <li class="nav-item"><a href="https://adenasgittinit.github.io/Responsive-Portfolio/index.html">About</a></li>
-                            <li class="nav-item"><a href="#">Portfolio</a></li>
-                            <li class="nav-item3"><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html">Contact</a></li>
-                        </ul>
-                </div>
-            </nav>
-        </header>
-        <div class="background">
-            <div class="wrapper">
-                    <!-- This is the middle section of the page  -->
-                <div class="content">
-                        <!-- this is the subheading -->
-                    <div class="about-me">
-                        Portfolio
-                    </div>
-                    <span id="divider"></span>
-                        <a href="https://deedlist.herokuapp.com/">
-                            <img id="portf1" src="./assets/images/logo.png" height="200" width="250" alt="https://deedlist.herokuapp.com/"/>
-                        </a>
-                            <!-- <a href="https://github.com/AdenasGittinIt/deedlist">deedlist</a> -->
 
-                            <a href="https://adenasgittinit.github.io/Travel-Link/">
-                                <img id="portf2" src="./assets/images/travelink.png" height="200" width="250"/>
-                            </a>
 
-                                <!-- <a href="https://github.com/AdenasGittinIt/Travel-Link">Travel-Link</a> -->
-
-                            <a href="https://express-yourself-note-taker.herokuapp.com/">
-                                <img id="portf3" src="./assets/images/note taker.png" height="200" width="250"/>
-                            </a>
-
-      
-                                <!-- <a href="https://github.com/AdenasGittinIt/Express-Yourself">Express-Yourself</a> -->
-
-                            <a href="https://adenasgittinit.github.io/Weather-Dashboard/">
-                                <img id="portf4" src="./assets/images/weather dash.png" height="200" width="250">
-                            </a>
-
-                                <!-- <a href="https://github.com/AdenasGittinIt/Weather-Dashboard">Weather-Dashboard</a> -->
-
-                            <a href="https://adenasgittinit.github.io/JS-Code-Quiz/">
-                                <img id="portf5" src="./assets/images/code quiz.png" height="200" width="250"/>
-                            </a>
-
-                                <!-- <a href="https://github.com/AdenasGittinIt/JS-Code-Quiz">JS-Code-Quiz</a> -->
-
-                </div>
-            </div>
-        </div>
+<body class="background">
+    <div class="row">
     
-        <footer>
-        Copyright © 
-        </footer>
-    </body>
+      <nav>
+        <div class="blue darken-3 col s12 nav-wrapper">
+          <a href="#" class="brand-logo">Adena L. McGibbon</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/index.html">About</a>
+            </li>
+            <li><a href="#">Portfolio</a>
+            </li>
+            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>  <!--this is the nav wrapper --> 
+      </nav>
+    </div>  <!--this is the row for the nav bar -->
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l4">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://adenasgittinit.github.io/JS-Code-Quiz/" target="_blank">
+              <img id="portf5" src="./assets/images/code quiz.png" />
+            </a>
+          </div> <!--card image div-->
+          <div class="card-content">
+            <a class="card-title blue-text center" href="https://github.com/AdenasGittinIt/JS-Code-Quiz" target="_blank">JS-Code-Quiz</a>
+          </div> <!--card content div-->
+        </div> <!-- card div-->
+      </div> <!--first col in first row-->
+      <div class="col s12 l4"></div> <!--empty col-->
+
+      <div class="col s12 l4">
+        <div class="card-panel blue darken-3 white-text">
+            <p>
+              click an image to see the app or the title to see the github repo.
+            </p>
+      </div> <!--card div-->
+      </div> <!--second col in the first row-->
+    </div> <!--first row-->
+
+    <div class="row">
+      <div class="col s12 l4"></div> <!--empty col-->
+      <div class="col s12 l4">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://deedlist.herokuapp.com/" target="_blank">
+              <img id="portf5" src="./assets/images/logo.png" />
+            </a>
+          </div> <!--card image div-->
+          <div class="card-content">
+            <a class="card-title blue-text center" href="https://github.com/AdenasGittinIt/deedlist" target="_blank">deedlist</a>
+          </div> <!--card content div-->
+        </div> <!-- card div-->
+      </div> <!--second col in second row-->
+
+      <div class="col s12 l4">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://express-yourself-note-taker.herokuapp.com/" target="_blank">
+              <img id="portf5" src="./assets/images/note taker.png"/>
+            </a>
+          </div> <!--card image div-->
+          <div class="card-content">
+            <a class="card-title blue-text center" href="https://github.com/AdenasGittinIt/Express-Yourself" target="_blank">express yo self</a>
+          </div> <!--card content div-->
+        </div> <!-- card div-->
+      </div> <!--third col in second row-->
+    </div> <!--closing tag for the second row-->
+
+    <div class="row">
+      <div class="col s12 l4">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://adenasgittinit.github.io/Travel-Link/" target="_blank">
+             <img id="portf5" src="./assets/images/travelink.png"/>
+            </a>
+          </div> <!--card image div-->
+          <div class="card-content">
+            <a class="card-title blue-text center" href="https://github.com/AdenasGittinIt/Travel-Link" target="_blank">travelink</a>
+          </div> <!--card content div-->
+        </div> <!-- card div-->
+      </div> <!--third col in second row-->
+      <div class="col s12 l4"></div> <!--empty col-->
+
+      <div class="row">
+        <div class="col s12 l4">
+          <div class="card">
+            <div class="card-image">
+              <a href="https://adenasgittinit.github.io/Weather-Dashboard/" target="_blank">
+               <img id="portf5" src="./assets/images/weather dash.png"/>
+              </a>
+            </div> <!--card image div-->
+            <div class="card-content">
+              <a class="card-title blue-text center" href="https://github.com/AdenasGittinIt/Weather-Dashboard" target="_blank">weather-dashboard</a>
+            </div> <!--card content div-->
+          </div> <!-- card div-->
+        </div> <!--third col in third row-->
+
+    </div> <!--closing tag for the third row-->
+
+
+
+    
+
+  </div> <!--container div-->
+</body>
 </html>

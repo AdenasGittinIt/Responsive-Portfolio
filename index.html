@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ALM Portfolio</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Good Test</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Comfortaa">
+<style>
+body {
+font-family: 'Comfortaa', cursive;
+font-size: 18px;
+}
+
+.background {
+  background-image: url("./assets/images/concrete-texture.png");
+}
+</style>
 </head>
-    <body>
-        <header>
-            <nav class="name-nav">
-                <h1>
-                    Adena L. McGibbon
-                </h1>
-                <div class="nav-list">
-                        <ul>
-                            <li class="nav-item"><a href="#">About</a></li>
-                            <li class="nav-item"><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
-                            <li class="nav-item3"><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html">Contact</a></li>
-                        </ul>
-                </div>
-            </nav>
-        </header>
-        <div class="background">
-                <div class="wrapper">
-                    <!-- This is the middle section of the page  -->
-                    <div class="content">
-                    <!-- This is the 'about me' text -->
-                        <div class="about-me">
-                            About Me
-                        </div>
-                        <span id="divider"></span>
-                        <img src="./assets/images/IMG_0320.png" id="image1" height="200" width="200"/>
-                        <p id="text">
-                            Tapping into the bravery I inherited from my dad who emigrated from the hills of the tiny tropical island, Jamaica to the frigid cold of Canada's most populous city with little more than his ambition and the clothes on his back; I've decided to leave more than a decade of experience as a payroll professional to go ALL-IN on a career change.
-                            <br>
-                            <br>
-                            A thoughtful methodical lover of all things creative I've finally found a way to keep both my left and right brain happy through full stack web development.  
-                            <br>
-                            <br>                            
-                        </p>
-                    </div> 
-                </div>
-        </div>
-    <footer>
-        Copyright © 
-    </footer>
-    </body>
+
+
+<body class="background">
+    <div class="row">
+    
+      <nav>
+        <div class="blue darken-3 col s12 nav-wrapper">
+          <a href="#" class="brand-logo">Adena L. McGibbon</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">About</a>
+            </li>
+            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>  <!--this is the nav wrapper --> 
+      </nav>
+    </div>  <!--this is the row for the nav bar -->
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 l3">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://adenasgittinit.github.io/JS-Code-Quiz/" target="_blank">
+              <img id="portf5" src="./assets/images/IMG_0320.png" />
+            </a>
+          </div> <!--card image div-->
+        </div> <!-- card div-->
+      </div> <!--first col in first row-->
+
+
+
+      <div class="col s12 l9">
+        <div class="card-panel">
+          <p id="text">
+            Tapping into the bravery I inherited from my dad who emigrated from the hills of the tiny tropical island, Jamaica to the frigid cold of Canada's most populous city with little more than his ambition and the clothes on his back; I've decided to leave more than a decade of experience as a payroll professional to go ALL-IN on a career change.
+            <br>
+            <br>
+            A thoughtful methodical lover of all things creative I've finally found a way to keep both my left and right brain happy through full stack web development.  
+            <br>
+            <br>                            
+        </p>
+      </div> <!--card div-->
+      </div> <!--second col in the first row-->
+    </div> <!--first row-->
+
+
+
+
+
+    
+
+  </div> <!--container div-->
+</body>
 </html>
