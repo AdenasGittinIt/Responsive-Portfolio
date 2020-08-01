@@ -4,63 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>The Good Test</title>
+  <title>The Good Stuff</title>
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
-  <!-- <link rel="stylesheet" href="style.css"> -->
-<style>
-body {
-font-family: 'Comfortaa', cursive;
-font-size: 18px;
-}
-
-.background {
-  background-image: url("./assets/images/concrete-texture.png");
-}
-</style>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-
 <body class="background">
-    <div class="row">
-    
-      <nav>
-        <div class="blue darken-3 col s12 nav-wrapper">
-          <a href="#" class="brand-logo">Adena L. McGibbon</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">About</a>
-            </li>
-            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
-            <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#101;&#110;&#97;&#46;&#109;&#99;&#103;&#105;&#98;&#98;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a>
-            </li>
-          </ul>
-        </div>  <!--this is the nav wrapper --> 
-      </nav>
-    </div>  <!--this is the row for the nav bar -->
-
-
+    <!-- <div class="row"> -->
+    <!-- </div>  this is the row for the nav bar -->
 
   <div class="container">
+
+    <nav>
+      <div class="blue darken-3 col s12 nav-wrapper">
+        <span class="brand-logo center">Adena L. McGibbon</span>
+        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">About</a></li>
+          <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#101;&#110;&#97;&#46;&#109;&#99;&#103;&#105;&#98;&#98;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a></li>
+        </ul>
+      </div>  <!--this is the nav wrapper --> 
+    </nav>
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#">About</a></li>
+      <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
+      <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#101;&#110;&#97;&#46;&#109;&#99;&#103;&#105;&#98;&#98;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a></li>
+  </ul>
+
     <div class="row">
       <div class="col s12 l3">
         <div class="card">
           <div class="card-image">
             <a href="https://github.com/AdenasGittinIt" target="_blank">
-              <img id="portf5" src="./assets/images/IMG_0320.png" />
+              <img id="portf5" src="./assets/images/IMG_0320.png" class="hoverable" />
             </a>
           </div> <!--card image div-->
         </div> <!-- card div-->
       </div> <!--first col in first row-->
 
-
-
       <div class="col s12 l9">
         <div class="card-panel">
           <p id="text">
-            Tapping into the bravery I inherited from my dad who emigrated from the hills of the tiny tropical island, Jamaica to the frigid cold of Canada's most populous city with little more than his ambition and the clothes on his back; I've decided to leave more than a decade of experience as a payroll professional to go ALL-IN on a career change.
+            A Full Stack Web Developer employing a photographer’s eye to create beautiful front end designs and clean readable code. Earned a Certificate in Full Stack Web Development from the University of Denver. Described as meticulous and methodical with an elegant approach to problem solving. Skilled at prioritizing tasks to meet tight deadlines.
             <br>
             <br>
-            A thoughtful methodical lover of all things creative I've finally found a way to keep both my left and right brain happy through full stack web development.  
+            I'm tapping into the bravery I inherited from my dad. He emigrated from the hills of the tiny tropical Jamaica island, to the frigid cold of Canada's most populous city with little more than his ambition and the clothes on his back; I've decided to leave more than a decade of experience as a payroll professional to go ALL-IN as a Web Developer.
+            <br>
+            <br>
+            I love of all things creative and have finally found a way to keep both my left and right brain happy through full stack web development.  
             <br>
             <br>                            
         </p>
@@ -70,5 +67,12 @@ font-size: 18px;
   </div> <!--container div-->
 
 <!-- <script src="assets/script.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
 </body>
 </html>
