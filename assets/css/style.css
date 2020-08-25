@@ -1,9 +1,13 @@
 
 body {
-    font-family: 'Mulish', sans-serif;
-    font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
   }
   
   .background {
-    background-image: url("../images/concrete-texture.png");
+    background-image: url("./assets/images/concrete-texture.png");
   }
+
+  /* .card:hover {
+    background-color: lightgray;
+  } */
