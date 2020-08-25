@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Comfortaa">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 
@@ -21,7 +22,7 @@
           <i class="material-icons">menu</i>
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">About</a></li>
+          <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/index.html">About</a></li>
           <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
           <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a></li>
         </ul>
@@ -29,10 +30,12 @@
     </nav>
   </div>  <!--this is the row for the nav bar -->
 
-
-
-
   <div class="container">
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/index.html">About</a></li>
+      <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
+      <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a></li>
+    </ul>
       <div class="col s12 l4">
         <div class="collection">
           <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#101;&#110;&#97;&#46;&#109;&#99;&#103;&#105;&#98;&#98;&#111;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank" class="collection-item blue-text">
@@ -47,5 +50,12 @@
         </div>
     </div> <!--second col in the first row-->
   </div> <!--container div-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
 </body>
 </html>

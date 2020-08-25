@@ -9,46 +9,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Comfortaa">
-<style>
-body {
-  font-family: 'Comfortaa', cursive;
-font-size: 18px;
-}
-
-.background {
-  background-image: url("./assets/images/concrete-texture.png");
-}
-@media only screen and (max-width: 582px) {
-  .brand-logo {
-  font-size: 20px;
-}
-  
-}
-</style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 
 <body class="background">
-  <div class="row">
-    <nav>
-      <div class="blue darken-3 col s12 nav-wrapper">
-        <span class="brand-logo">Adena L. McGibbon</span>
-        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">About</a></li>
-          <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
-          <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a></li>
-        </ul>
-      </div>  <!--this is the nav wrapper --> 
-    </nav>
-  </div>  <!--this is the row for the nav bar -->
-
-
-
+    <div class="row">
+      <nav>
+        <div class="blue darken-3 col s12 nav-wrapper">
+          <span class="brand-logo">Adena L. McGibbon</span>
+          <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/index.html">About</a></li>
+            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a></li>
+          </ul>
+        </div>  <!--this is the nav wrapper --> 
+      </nav>
+    </div>  <!--this is the row for the nav bar --> 
 
   <div class="container">
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/index.html">About</a></li>
+      <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
+      <li><a href="https://adenasgittinit.github.io/Responsive-Portfolio/contact.html" target="_blank">&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#77;&#101;</a></li>
+    </ul>
     <div class="row">
       <div class="col s12 l4">
         <div class="card-panel blue darken-3 white-text">
@@ -132,11 +119,13 @@ font-size: 18px;
         </div> <!--third col in third row-->
 
     </div> <!--closing tag for the third row-->
-
-
-
-    
-
   </div> <!--container div-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
 </body>
 </html>
